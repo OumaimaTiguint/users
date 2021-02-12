@@ -1,4 +1,6 @@
+import { UsersService } from './../services/users.service';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  users: Observable<any>
+  constructor(private usersService: UsersService) {}
 
-  constructor() {}
-
+  ionViewWillEnter() {
+    this.users = this.usersService.getUsers();
+  }
 }
