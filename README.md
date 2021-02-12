@@ -4,7 +4,7 @@ Technologies used:
     Ionic, Angular, and TypeScript for the frontend
 
 ## Demo
-[!Demo](demo.gif)
+![Demo](demo.gif)
 
 ## Install
 ```
